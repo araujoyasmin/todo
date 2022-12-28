@@ -23,7 +23,9 @@ Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/task/new', [TaskController::class, 'create'])->name('task.create');
+Route::post('/task/create_action', [TaskController::class, 'create_action'])->name('task.create_action');
 Route::get('/task', [TaskController::class, 'index'])->name('task.view');
 Route::get('/task/edit', [TaskController::class, 'edit'])->name('task.edit');
+Route::post('/task/edit_action', [TaskController::class, 'edit_action'])->name('task.edit_action');
 Route::get('/task/delete', [TaskController::class, 'delete'])->name('task.delete');
 

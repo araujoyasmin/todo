@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(Request $r){
-        $tasks = Task::all()->take(5);
+        $tasks = Task::all()->take(15);
         return view ('home', ['tasks' => $tasks]);
         
     }
