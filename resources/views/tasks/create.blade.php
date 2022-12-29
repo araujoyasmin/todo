@@ -15,7 +15,7 @@
                 <option value="{{$category->id}}">{{$category->title}}</option>
                 @endforeach
                
-            </x-form.text_input>
+            </x-form.select_input>
             <x-form.textarea_input name="description" label="Descrição" placeholder="Digite a descrição"  required="required"/> 
             
             <x-form.form_button resetTxt="Resetar" submitTxt="Criar Tarefa"/>

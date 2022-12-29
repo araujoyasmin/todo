@@ -67,6 +67,11 @@ a.btn {
 
 }
 
+.btn-danger {
+    background-color: rgb(175, 68, 68);
+    color: white;
+
+}
 main {
     display: flex;
     padding: 20px;
